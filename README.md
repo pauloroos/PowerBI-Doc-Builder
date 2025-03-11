@@ -10,7 +10,6 @@
 ---
 
 ## 🚀 Funcionalidades
-
 - 🧠 **Geração de descrições com IA (Google Gemini)**
 - 📄 **Criação de documento Word com formatação profissional**
 - 🧱 **Tabela de medidas, colunas, partições, relacionamentos, parâmetros e grupos de cálculo**
@@ -22,8 +21,75 @@
 
 ---
 
-## 🧩 Instalação e Configuração de Requisitos
+## 🖼️ Capturas de Tela
+### 🧭 Tela Inicial do Aplicativo
+<img src="https://github.com/pauloroos/PowerBI-Doc-Builder/blob/2bde9f2e4f652220a5ccd44756776f288132bbc8/assets/aplicativo.png" alt="Tela inicial do app" width="700"/>
 
+### ⚙️ Menu de Configurações
+<img src="https://github.com/pauloroos/PowerBI-Doc-Builder/blob/2bde9f2e4f652220a5ccd44756776f288132bbc8/assets/configuracoes.png" alt="Menu de configurações do app" width="700"/>
+
+
+---
+
+## 🧪 Tecnologias Utilizadas
+- Python, Tkinter, TTKBootstrap
+- Pandas, Graphviz, Pillow
+- python-docx, psutil, subprocess
+- Google Generative AI (Gemini)
+
+---
+
+## 🤖 IA no Projeto
+O projeto utiliza a **API do Gemini** para gerar descrições automáticas dos dashboards com base nos dados extraídos (tabelas, colunas, medidas e relacionamentos). Isso permite um overview claro e objetivo sobre o propósito do modelo semântico.
+
+---
+
+## 📁 Estrutura de Saída
+Ao processar um ou mais arquivos `.pbix`, será gerado:
+
+```
+📁 Resultado
+ ┣ 📁 Arquivos
+ ┃ ┗ 📁 <nome_arquivo_pbix>
+ ┃    ┣ columns.csv
+ ┃    ┣ measures.csv
+ ┃    ┣ ...
+ ┣ 📁 Documentacao
+ ┃ ┣ <nome_arquivo_pbix>.docx
+ ┃ ┣ <nome_arquivo_pbix> - DIAGRAMA.png
+```
+
+---
+
+## ⚙️ Como Usar
+1. **Clone o repositório:**
+
+```bash
+git clone https://github.com/pauloroos/PowerBI-Doc-Builder.git
+cd PowerBI-Doc-Builder
+```
+
+2. **Instale as dependências:**
+
+```bash
+pip install -r requirements.txt
+```
+
+3. **Configure os caminhos:**
+- DAX Studio (`dscmd.exe`)
+- DLL do Analysis Services (`Microsoft.AnalysisServices.dll`)
+- Executável do Power BI Desktop (`PBIDesktop.exe`)
+- API Key do Gemini (obtenha em https://aistudio.google.com/app/apikey)
+
+4. **Execute o aplicativo:**
+
+```bash
+python PowerBIDocBuilderApp.py
+```
+
+---
+
+## 🧩 Instalação e Configuração de Requisitos
 Antes de rodar o PowerBI Doc Builder, certifique-se de instalar e configurar os seguintes itens:
 
 ### 📦 1. Python 3.10+
@@ -64,166 +130,7 @@ dot -V
 
 ---
 
-## ⚙️ Como Usar
-
-1. **Clone o repositório:**
-
-```bash
-git clone https://github.com/pauloroos/PowerBI-Doc-Builder.git
-cd PowerBI-Doc-Builder
-```
-
-2. **Instale as dependências:**
-
-```bash
-pip install -r requirements.txt
-```
-
-3. **Execute o aplicativo:**
-
-```bash
-python PowerBIDocBuilderApp.py
-```
-
-4. **Configure os caminhos na interface do app**
-
-- Preencha os campos com os caminhos do DAX Studio, DLL, Power BI e API Key do Gemini
-
-5. **Selecione a pasta com os arquivos `.pbix`**
-6. **Clique em "Gerar Relatório"**
-
----
-
-## 📁 Estrutura de Saída
-
-Ao processar os arquivos `.pbix`, será criada uma subpasta chamada `Resultado` dentro da pasta selecionada, contendo:
-
-```
-📁 Resultado
- ┣ 📁 Arquivos
- ┃ ┗ 📁 <nome_arquivo_pbix>
- ┃    ┣ columns.csv
- ┃    ┣ measures.csv
- ┃    ┣ ...
- ┣ 📁 Documentacao
- ┃ ┣ <nome_arquivo_pbix>.docx
- ┃ ┣ <nome_arquivo_pbix> - DIAGRAMA.png
-```
-
-
-
-
-
-## 🖼️ Capturas de Tela
-
-### 🧭 Tela Inicial do Aplicativo
-<img src="https://github.com/pauloroos/PowerBI-Doc-Builder/blob/2bde9f2e4f652220a5ccd44756776f288132bbc8/assets/aplicativo.png" alt="Tela inicial do app" width="700"/>
-
-### ⚙️ Menu de Configurações
-<img src="https://github.com/pauloroos/PowerBI-Doc-Builder/blob/2bde9f2e4f652220a5ccd44756776f288132bbc8/assets/configuracoes.png" alt="Menu de configurações do app" width="700"/>
-
-
----
-
-## ⚙️ Como Usar
-
-1. **Clone o repositório:**
-
-```bash
-git clone https://github.com/pauloroos/PowerBI-Doc-Builder.git
-cd PowerBI-Doc-Builder
-```
-
-2. **Instale as dependências:**
-
-```bash
-pip install -r requirements.txt
-```
-
-3. **Configure os caminhos:**
-- DAX Studio (`dscmd.exe`)
-- DLL do Analysis Services (`Microsoft.AnalysisServices.dll`)
-- Executável do Power BI Desktop (`PBIDesktop.exe`)
-- API Key do Gemini (obtenha em https://aistudio.google.com/app/apikey)
-
-4. **Execute o aplicativo:**
-
-```bash
-python PowerBIDocBuilderApp.py
-```
-
----
-
-
-
-## 🧪 Tecnologias Utilizadas
-
-- Python, Tkinter, TTKBootstrap
-- Pandas, Graphviz, Pillow
-- python-docx, psutil, subprocess
-- Google Generative AI (Gemini)
-
----
-
-## 🤖 IA no Projeto
-
-O projeto utiliza a **API do Gemini** para gerar descrições automáticas dos dashboards com base nos dados extraídos (tabelas, colunas, medidas e relacionamentos). Isso permite um overview claro e objetivo sobre o propósito do modelo semântico.
-
----
-
-## 📁 Estrutura de Saída
-
-Ao processar um ou mais arquivos `.pbix`, será gerado:
-
-```
-📁 Resultado
- ┣ 📁 Arquivos
- ┃ ┗ 📁 <nome_arquivo_pbix>
- ┃    ┣ columns.csv
- ┃    ┣ measures.csv
- ┃    ┣ ...
- ┣ 📁 Documentacao
- ┃ ┣ <nome_arquivo_pbix>.docx
- ┃ ┣ <nome_arquivo_pbix> - DIAGRAMA.png
-```
-
----
-
-## 👤 Autor
-
-**Paulo Roos**  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-paulo--roosf-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/pauloroosf)  
-[![GitHub](https://img.shields.io/badge/GitHub-paulo--roos-black?logo=github&style=flat-square)](https://github.com/pauloroos)
-
----
-
-## ⭐ Contribua
-
-Achou útil? Deixe uma ⭐ no repositório e compartilhe com a comunidade Power BI!
-
----
-
-
----
-
-
----
-
-
----
-
-## 📁 Pasta Auxiliar
-
-O repositório também inclui uma pasta chamada `auxiliar`, que contém:
-
-- 📘 **Manual do Usuário** (`manual.docx`): documentação com orientações detalhadas de uso
-- ⚙️ **Executáveis testados**: versões específicas do DAX Studio, Graphviz e outros utilizados durante os testes, garantindo maior compatibilidade
-
-Essa pasta é útil para quem deseja replicar o ambiente exatamente como foi validado.
-
-
 ## 📦 Geração de Executável
-
 Este projeto inclui um script `create_app.bat` que gera automaticamente um executável `.exe` com todos os arquivos necessários incluídos (imagens, configurações e módulos).
 
 ### ▶️ Como usar:
@@ -267,17 +174,42 @@ python -m PyInstaller --noconsole --onefile PowerBIDocBuilderApp.py ^
 pause
 ```
 
+## 📁 Pasta Auxiliar
+O repositório também inclui uma pasta chamada `auxiliar`, que contém:
+
+- 📘 **Manual do Usuário** (`manual.docx`): documentação com orientações detalhadas de uso
+- ⚙️ **Executáveis testados**: versões específicas do DAX Studio, Graphviz e outros utilizados durante os testes, garantindo maior compatibilidade
+
+Essa pasta é útil para quem deseja replicar o ambiente exatamente como foi validado.
 
 ## 🙏 Referência
-
 Este projeto foi inspirado e adaptado a partir de:
 
 - [pbi-docs](https://github.com/alisonpezzott/pbi-docs) — criado por [@alisonpezzott](https://github.com/alisonpezzott)
 
 Agradecimentos pela base de extração e estrutura inicial, que contribuíram significativamente para o desenvolvimento do PowerBI Doc Builder.
 
-
 ## 📜 Licença
-
 MIT License © Paulo Roos
+---
+
+## 👤 Autor
+**Paulo Roos**  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-paulo--roosf-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/pauloroosf)  
+[![GitHub](https://img.shields.io/badge/GitHub-paulo--roos-black?logo=github&style=flat-square)](https://github.com/pauloroos)
+
+---
+
+## ⭐ Contribua
+Achou útil? Deixe uma ⭐ no repositório e compartilhe com a comunidade Power BI!
+
+---
+
+
+---
+
+
+---
+
+
 ---
