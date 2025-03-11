@@ -113,6 +113,7 @@ Ao processar os arquivos `.pbix`, será criada uma subpasta chamada `Resultado` 
 
 
 
+
 ## 🖼️ Capturas de Tela
 
 ### 🧭 Tela Inicial do Aplicativo
@@ -207,6 +208,19 @@ Achou útil? Deixe uma ⭐ no repositório e compartilhe com a comunidade Power 
 
 
 ---
+
+
+---
+
+## 📁 Pasta Auxiliar
+
+O repositório também inclui uma pasta chamada `auxiliar`, que contém:
+
+- 📘 **Manual do Usuário** (`manual.docx`): documentação com orientações detalhadas de uso
+- ⚙️ **Executáveis testados**: versões específicas do DAX Studio, Graphviz e outros utilizados durante os testes, garantindo maior compatibilidade
+
+Essa pasta é útil para quem deseja replicar o ambiente exatamente como foi validado.
+
 
 ## 📦 Geração de Executável
 
