@@ -1,0 +1,10 @@
+tk
+ttkbootstrap
+Pillow
+requests
+pandas
+psutil
+python-docx
+graphviz
+google-generativeai
+pywin32

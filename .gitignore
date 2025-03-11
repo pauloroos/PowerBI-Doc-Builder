@@ -1,0 +1,14 @@
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+**/__pycache__/ 
+/.vscode
+**/results/dataflows_json/
+**/results/datasets_info/
+**/results/documentation/
+**/results/exported_pbix/
+**/results/tenant_metadata/
+.env
+config.json
+secrets.yaml
+*.pbix
+Resultado
