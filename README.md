@@ -28,6 +28,11 @@
 ### ⚙️ Menu de Configurações
 <img src="https://github.com/pauloroos/PowerBI-Doc-Builder/blob/2bde9f2e4f652220a5ccd44756776f288132bbc8/assets/configuracoes.png" alt="Menu de configurações do app" width="700"/>
 
+### 🤖 Exemplo de descrição com IA (Google Gemini)
+<img src="https://github.com/pauloroos/PowerBI-Doc-Builder/blob/92ff98ce09df4db15495ed8d688316daac59a8da/assets/exemplo-texto-ia.png" alt="Menu de configurações do app" width="700"/>
+
+### 🔥 Exemplo de Diagrama Gerado com o Graphviz
+<img src="https://github.com/pauloroos/PowerBI-Doc-Builder/blob/92ff98ce09df4db15495ed8d688316daac59a8da/assets/exemplo-diagrama-gerado.png" alt="Menu de configurações do app" width="700"/>
 
 ---
 
