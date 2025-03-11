@@ -116,10 +116,10 @@ Ao processar os arquivos `.pbix`, será criada uma subpasta chamada `Resultado` 
 ## 🖼️ Capturas de Tela
 
 ### 🧭 Tela Inicial do Aplicativo
-<img src="https://github.com/pauloroos/PowerBI-Doc-Builder/assets/aplicativo.png" alt="Tela inicial do app" width="700"/>
+<img src="https://github.com/pauloroos/PowerBI-Doc-Builder/blob/2bde9f2e4f652220a5ccd44756776f288132bbc8/assets/aplicativo.png" alt="Tela inicial do app" width="700"/>
 
 ### ⚙️ Menu de Configurações
-<img src="https://github.com/pauloroos/PowerBI-Doc-Builder/assets/configuracoes.png" alt="Menu de configurações do app" width="700"/>
+<img src="https://github.com/pauloroos/PowerBI-Doc-Builder/blob/2bde9f2e4f652220a5ccd44756776f288132bbc8/assets/configuracoes.png" alt="Menu de configurações do app" width="700"/>
 
 
 ---
